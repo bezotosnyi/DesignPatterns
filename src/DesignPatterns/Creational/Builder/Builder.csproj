@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D89CB6C4-8BC8-4B57-91BF-8D01A66F3873}</ProjectGuid>
+    <ProjectGuid>{A71BD2DD-4EE7-4DDB-962A-D37A615824C0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>AbstractFactory</AssemblyName>
+    <RootNamespace>Builder</RootNamespace>
+    <AssemblyName>Builder</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,16 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory.cs" />
-    <Compile Include="AbstractProductA.cs" />
-    <Compile Include="AbstractProductB.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="ConcreteFactory1.cs" />
-    <Compile Include="ConcreteFactory2.cs" />
-    <Compile Include="ProductA1.cs" />
-    <Compile Include="ProductA2.cs" />
-    <Compile Include="ProductB1.cs" />
-    <Compile Include="ProductB2.cs" />
+    <Compile Include="Builder.cs" />
+    <Compile Include="ConcreteBuilder1.cs" />
+    <Compile Include="ConcreteBuilder2.cs" />
+    <Compile Include="Director.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,7 +55,7 @@
     <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AbstractFactoryUML.JPG" />
+    <Content Include="Builder.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
